@@ -1,0 +1,40 @@
+.carousel {
+    width: 120%;
+    height: 320%; 
+    display: flex;
+    overflow: hidden;
+    justify-content: center; /* Center the carousel horizontally */
+    align-items: center;
+    
+  }
+  .carousel-container {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center the carousel horizontally */
+    align-items: center; /* Center the carousel vertically */
+  }
+  
+  .carousel img {
+    flex: 0 0 33.333%;
+    object-fit: cover;
+    margin: 0 5px;
+  }
+
+  .carousel-image {
+    flex: 1;
+    object-fit: cover;
+    height: 100%; /* Ensure images fill the height of the container */
+    width: 100%; /* Ensure images fill the width of the container */
+  }
+
+  .carousel-buttons {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+  }
+  

@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
+import './OrderForm.css';
 
 const OrderForm = () => {
     const [formData, setFormData] = useState({
-        Customer_name: '',
-        Phone_Number: '',
+        CustomerName: '',
+        PhoneNumber: '',
         Size: '',
-        Customer_email: '',
+        CustomerEmail: '',
         Colour: '',
         Quantity: '',
-        Customer_age: '',
-        Customer_gender: '',
-        Returning_Customer: false,
+        CustomerAge: '',
+        CustomerGender: '',
+        ReturningCustomer: false,
     });
 
     const handleChange = (e) => {
@@ -21,7 +22,7 @@ const OrderForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:3000/send-email', {
+            const response = await fetch('https://us-central1-just-quack-it.cloudfunctions.net/sendEmail', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -38,15 +39,15 @@ const OrderForm = () => {
     };
 
     return (
-            <form onSubmit={handleSubmit}>
+            <form className="order-form" onSubmit={handleSubmit}>
                 {/* Input fields */}
                         
                 <div>
                     <label>Customer Name:</label>
                     <input
                         type="text"
-                        name="Customer_name"
-                        value={formData.Customer_name}
+                        name="CustomerName"
+                        value={formData.CustomerName}
                         onChange={handleChange}
                         placeholder="Customer Name"
                         required
@@ -57,8 +58,8 @@ const OrderForm = () => {
                     <label>Phone Number:</label>
                     <input
                         type="text"
-                        name="Phone_Number"
-                        value={formData.Phone_Number}
+                        name="PhoneNumber"
+                        value={formData.PhoneNumber}
                         onChange={handleChange}
                         placeholder="Phone Number"
                         required
@@ -82,8 +83,8 @@ const OrderForm = () => {
                     <label>Customer Email:</label>
                     <input
                         type="email"
-                        name="Customer_email"
-                        value={formData.Customer_email}
+                        name="CustomerEmail"
+                        value={formData.CustomerEmail}
                         onChange={handleChange}
                         placeholder="Customer Email"
                         required
@@ -117,8 +118,8 @@ const OrderForm = () => {
                     <label>Customer Age:</label>
                     <input
                         type="text"
-                        name="Customer_age"
-                        value={formData.Customer_age}
+                        name="CustomerAge"
+                        value={formData.CustomerAge}
                         onChange={handleChange}
                         placeholder="Customer Age"
                     />
@@ -127,8 +128,8 @@ const OrderForm = () => {
                 <div>
                     <label>Customer Gender:</label>
                     <select
-                        name="Customer_gender"
-                        value={formData.Customer_gender}
+                        name="CustomerGender"
+                        value={formData.CustomerGender}
                         onChange={handleChange}
                         required
                     >
@@ -142,12 +143,12 @@ const OrderForm = () => {
                     <label>Returning Customer:</label>
                     <input
                         type="checkbox"
-                        name="Returning_Customer"
-                        checked={formData.Returning_Customer}
+                        name="ReturningCustomer"
+                        checked={formData.ReturningCustomer}
                         onChange={(e) =>
                             setFormData({
                                 ...formData,
-                                Returning_Customer: e.target.checked,
+                                ReturningCustomer: e.target.checked,
                             })
                         }
                     />
