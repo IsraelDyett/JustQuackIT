@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/JustQuackIT.git/static/css/main.332077e0.css",
+    "main.js": "/JustQuackIT.git/static/js/main.ddd83b59.js",
+    "static/js/453.8ab44547.chunk.js": "/JustQuackIT.git/static/js/453.8ab44547.chunk.js",
+    "static/media/store_one.jpeg": "/JustQuackIT.git/static/media/store_one.22250cc56767d4a8f7e1.jpeg",
+    "static/media/duckStore.jpeg": "/JustQuackIT.git/static/media/duckStore.646253911c4cecf6bff7.jpeg",
+    "static/media/jqi.jpeg": "/JustQuackIT.git/static/media/jqi.68a6fe945ad4ef3769a3.jpeg",
+    "index.html": "/JustQuackIT.git/index.html",
+    "main.332077e0.css.map": "/JustQuackIT.git/static/css/main.332077e0.css.map",
+    "main.ddd83b59.js.map": "/JustQuackIT.git/static/js/main.ddd83b59.js.map",
+    "453.8ab44547.chunk.js.map": "/JustQuackIT.git/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.332077e0.css",
+    "static/js/main.ddd83b59.js"
+  ]
+}
