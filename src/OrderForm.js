@@ -43,115 +43,133 @@ const OrderForm = () => {
                 {/* Input fields */}
                         
                 <div>
-                    <label>Customer Name:</label>
-                    <input
-                        type="text"
-                        name="CustomerName"
-                        value={formData.CustomerName}
-                        onChange={handleChange}
-                        placeholder="Customer Name"
-                        required
-                    />
+                    <label>
+                        <span>Customer Name:</span>
+                        <input
+                            type="text"
+                            name="CustomerName"
+                            value={formData.CustomerName}
+                            onChange={handleChange}
+                            placeholder="Customer Name"
+                            required
+                        />
+                    </label>
                 </div>
 
                 <div>
-                    <label>Phone Number:</label>
-                    <input
-                        type="text"
-                        name="PhoneNumber"
-                        value={formData.PhoneNumber}
-                        onChange={handleChange}
-                        placeholder="Phone Number"
-                        required
-                    />
+                    <label>
+                        <span>Phone Number:</span> 
+                        <input
+                            type="text"
+                            name="PhoneNumber"
+                            value={formData.PhoneNumber}
+                            onChange={handleChange}
+                            placeholder="Phone Number"
+                            required
+                        />
+                    </label>
                 </div>
 
                 <div>
-                    <label>Size:</label>
-                    <input
-                        type="text"
-                        name="Size"
-                        value={formData.Size}
-                        onChange={handleChange}
-                        placeholder="Size"
-                        maxLength="1"
-                        required
-                    />
+                    <label>
+                        <span>Size:</span>
+                        <input
+                            type="text"
+                            name="Size"
+                            value={formData.Size}
+                            onChange={handleChange}
+                            placeholder="Size"
+                            maxLength="1"
+                            required
+                        />
+                    </label>
                 </div>
 
                 <div>
-                    <label>Customer Email:</label>
-                    <input
-                        type="email"
-                        name="CustomerEmail"
-                        value={formData.CustomerEmail}
-                        onChange={handleChange}
-                        placeholder="Customer Email"
-                        required
-                    />
+                    <label>
+                        <span>Customer Email:</span>
+                        <input
+                            type="email"
+                            name="CustomerEmail"
+                            value={formData.CustomerEmail}
+                            onChange={handleChange}
+                            placeholder="Customer Email"
+                            required
+                        />
+                    </label>
                 </div>
 
                 <div>
-                    <label>Colour:</label>
-                    <input
-                        type="text"
-                        name="Colour"
-                        value={formData.Colour}
-                        onChange={handleChange}
-                        placeholder="Colour"
-                    />
+                    <label>
+                        <span>Colour:</span>
+                        <input
+                            type="text"
+                            name="Colour"
+                            value={formData.Colour}
+                            onChange={handleChange}
+                            placeholder="Colour"
+                        />
+                    </label>
                 </div>
 
                 <div>
-                    <label>Quantity:</label>
-                    <input
-                        type="number"
-                        name="Quantity"
-                        value={formData.Quantity}
-                        onChange={handleChange}
-                        placeholder="Quantity"
-                        required
-                    />
+                    <label>
+                        <span>Quantity:</span>
+                        <input
+                            type="number"
+                            name="Quantity"
+                            value={formData.Quantity}
+                            onChange={handleChange}
+                            placeholder="Quantity"
+                            required
+                        />
+                    </label>
                 </div>
 
                 <div>
-                    <label>Customer Age:</label>
-                    <input
-                        type="text"
-                        name="CustomerAge"
-                        value={formData.CustomerAge}
-                        onChange={handleChange}
-                        placeholder="Customer Age"
-                    />
+                    <label>
+                        <span>Customer Age:</span>
+                            <input
+                                type="text"
+                                name="CustomerAge"
+                                value={formData.CustomerAge}
+                                onChange={handleChange}
+                                placeholder="Customer Age"
+                            />
+                    </label>
                 </div>
 
                 <div>
-                    <label>Customer Gender:</label>
-                    <select
-                        name="CustomerGender"
-                        value={formData.CustomerGender}
-                        onChange={handleChange}
-                        required
-                    >
-                        <option value="">Select Gender</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                    </select>
+                    <label>
+                        <span>Customer Gender:</span>
+                            <select
+                                name="CustomerGender"
+                                value={formData.CustomerGender}
+                                onChange={handleChange}
+                                required
+                            >
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                    </label>
                 </div>
 
                 <div>
-                    <label>Returning Customer:</label>
-                    <input
-                        type="checkbox"
-                        name="ReturningCustomer"
-                        checked={formData.ReturningCustomer}
-                        onChange={(e) =>
-                            setFormData({
-                                ...formData,
-                                ReturningCustomer: e.target.checked,
-                            })
-                        }
-                    />
+                    <label>
+                        <span>Returning Customer:</span>
+                        <input
+                            type="checkbox"
+                            name="ReturningCustomer"
+                            checked={formData.ReturningCustomer}
+                            onChange={(e) =>
+                                setFormData({
+                                    ...formData,
+                                    ReturningCustomer: e.target.checked,
+                                })
+                            }
+                        />
+                    </label>
                 </div>
 
 
