@@ -2,7 +2,7 @@
 .order-form {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 50%;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -49,4 +49,15 @@
   .order-form button[type="submit"]:hover {
     background-color: #0056b3;
   }
-  
+  /* Media query for smaller screens */
+@media (max-width: 768px) {
+  .order-form {
+      width: 70%; /* Reduce width on smaller screens */
+  }
+
+  .order-form input,
+  .order-form select,
+  .order-form textarea {
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
