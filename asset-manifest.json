@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/JustQuackIt/static/css/main.b1322254.css",
-    "main.js": "/JustQuackIt/static/js/main.4b0f2b97.js",
+    "main.js": "/JustQuackIt/static/js/main.cc71789b.js",
     "static/js/453.8ab44547.chunk.js": "/JustQuackIt/static/js/453.8ab44547.chunk.js",
     "static/media/video1.mp4": "/JustQuackIt/static/media/video1.6ab30842509ce20d88e4.mp4",
-    "static/media/video2.mp4": "/JustQuackIt/static/media/video2.92b1c4e3b2644fee8dee.mp4",
+    "static/media/JQIvideo.mp4": "/JustQuackIt/static/media/JQIvideo.e4d7f7d6cfe5d90944e0.mp4",
     "static/media/duckStore.jpeg": "/JustQuackIt/static/media/duckStore.646253911c4cecf6bff7.jpeg",
     "static/media/mobileduckStore.jpeg": "/JustQuackIt/static/media/mobileduckStore.ca20218f1620a2a55f8a.jpeg",
     "static/media/slide4.jpeg": "/JustQuackIt/static/media/slide4.dcc03c6f2f4726a1b8df.jpeg",
@@ -15,11 +15,11 @@
     "static/media/afe84cb7-75d6-4330-8894-aefa0e85a774.JPG": "/JustQuackIt/static/media/afe84cb7-75d6-4330-8894-aefa0e85a774.0c9f8fc62b6fe130c521.JPG",
     "index.html": "/JustQuackIt/index.html",
     "main.b1322254.css.map": "/JustQuackIt/static/css/main.b1322254.css.map",
-    "main.4b0f2b97.js.map": "/JustQuackIt/static/js/main.4b0f2b97.js.map",
+    "main.cc71789b.js.map": "/JustQuackIt/static/js/main.cc71789b.js.map",
     "453.8ab44547.chunk.js.map": "/JustQuackIt/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b1322254.css",
-    "static/js/main.4b0f2b97.js"
+    "static/js/main.cc71789b.js"
   ]
 }
